@@ -5,6 +5,8 @@ const connectDB = require('./db.js')
 
 connectDB()
 
+app.use(express.json())
+
 const server = app.listen(PORT, () => {
     console.log(`The server is running on ${PORT} ya did it`)
 })
